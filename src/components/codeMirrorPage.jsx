@@ -8,7 +8,6 @@ function ExamplePage() {
 
     const [value, setValue] = useState("console.log('hello world!')");
     const onChange = React.useCallback((val, viewUpdate)=>{
-        console.log('val:', val);
         setValue(val);
     }, []);
 
